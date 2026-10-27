@@ -183,5 +183,6 @@ bun run build
 
 ### Maintenance
 ```
+bun update
 ```
 
