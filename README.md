@@ -26,7 +26,6 @@ Base structure:
 
 ### Maintenance
 
-
 ## Cargo - Rust
 
 ### Initialization
@@ -96,3 +95,74 @@ cargo doc
 ```
 cargo update
 ```
+
+## Bun - TS/JS runtime
+
+### Initialization
+Initialize in existing directory:
+```
+bun init #-y
+```
+
+### Layout
+
+### Running
+In package.json you can configure scripts, with an entry point, for instance
+
+`"main": "bun src/index.ts"`
+
+which allows you do do
+`bun run main`
+
+```
+bun run entrypoint
+```
+
+### Dependencies
+Adding a dependency:
+```
+bun add dependency-name
+```
+
+Removing a dependency:
+```
+bun remove dependency-name
+```
+
+Adding a dev dependency
+```
+bun add -D dependency-name
+```
+
+### Formatting
+```
+```
+
+### Checking
+```
+```
+
+### Linting
+```
+```
+
+### Testing
+```
+```
+
+### Building
+Debug build:
+```
+```
+Release:
+```
+```
+
+### Documentation
+```
+```
+
+### Maintenance
+```
+```
+
