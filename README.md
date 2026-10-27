@@ -47,8 +47,14 @@ cargo run
 ```
 
 ### Dependencies
+Adding a dependency:
 ```
 cargo add dependency-name
+```
+
+Removing a dependency:
+```
+cargo remove dependency-name
 ```
 
 ### Formatting
