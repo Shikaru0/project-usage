@@ -135,27 +135,46 @@ bun add -D dependency-name
 ```
 
 ### Formatting
+Bun has no built-in formatter. Use **Prettier** via `bunx`.
 ```
+bunx prettier --write .
+```
+
+Or **Biome**
+```
+bunx @biomejs/biome format --write .
 ```
 
 ### Checking
 ```
+bunx tsc --noEmit
 ```
+Or via `package.json` script: `"typecheck": "tsc --noEmit"`, then `bun run typecheck`.
 
 ### Linting
+Bun has no built-in linter. Use **ESLint** or **Biome**
 ```
+bunx eslint.
+```
+
+```
+bunx @biomejs/biome lint .
 ```
 
 ### Testing
 ```
+bun test
 ```
 
 ### Building
-Debug build:
+Bundle to a file for deployment:
 ```
+bun build src/index.ts --outfile dist/bundle.js
 ```
-Release:
+
+For frameworks, with "build" as a package.json script:
 ```
+bun run build
 ```
 
 ### Documentation
